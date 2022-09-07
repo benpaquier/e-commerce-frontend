@@ -1,0 +1,6 @@
+.logo-container {
+  padding: 16px;
+  background-color: var(--red);
+  color: white;
+  font-weight: 900;
+}

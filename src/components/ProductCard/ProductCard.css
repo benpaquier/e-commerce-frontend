@@ -1,0 +1,22 @@
+.product-card-img {
+  width: 290px;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.active {
+  opacity: 0.75;
+}
+
+.product-card-name {
+  font-size: 14px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.product-card-price {
+  font-size: 14px;
+  font-weight: 900;
+}
