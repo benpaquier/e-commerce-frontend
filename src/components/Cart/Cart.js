@@ -3,12 +3,12 @@ import { FiShoppingCart } from 'react-icons/fi'
 
 import './Cart.css'
 
-const Cart = () => {
+const Cart = ({ cartItems }) => {
   return (
     <Link className='cart-icon' to='/cart'>
       <div className='cart-icon-container'>
         <FiShoppingCart />
-        <div className='number'>2</div>
+        {cartItems > 0 && <div className='number'>{cartItems}</div>}
       </div>
     </Link>
   )

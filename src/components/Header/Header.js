@@ -7,7 +7,7 @@ import Logo from '../Logo/Logo'
 import Cart from '../Cart/Cart'
 import './Header.css'
 
-const Header = () => {
+const Header = ({ cartItems }) => {
   const [categories, setCategories] = useState([])
 
   useEffect(() => {
@@ -21,15 +21,17 @@ const Header = () => {
 
   return (
     <header>
-      <Logo />
+      <Link to='/'>
+        <Logo />
+      </Link>
       <nav>
         <Link to='/'>Products</Link>
         {categories.map(category => (
-          <Link key={category.name} to='/'>
+          <Link key={category.name} to={`/categories/${category.id}`}>
             {category.name}
           </Link>
         ))}
-        <Cart />
+        <Cart cartItems={cartItems} />
       </nav>
     </header>
   )

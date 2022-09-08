@@ -2,7 +2,6 @@ const { REACT_APP_API_URL } = process.env
 
 const getCategories = async () => {
   const request = await fetch(`${REACT_APP_API_URL}/categories`)
-  console.log(request)
   const response = await request.json()
 
   return response

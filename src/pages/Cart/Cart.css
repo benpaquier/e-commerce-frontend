@@ -1,0 +1,36 @@
+.cart-container {
+  display: flex;
+  gap: 80px;
+}
+
+.cart-products {
+  flex: 1;
+}
+
+.cart-container aside {
+  padding: 32px 0px;
+  position: sticky;
+  top: 100px;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: scroll;
+  text-align: right;
+}
+
+.cart-container ul {
+  margin-bottom: 32px;
+}
+
+.cart-container ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0px;
+}
+
+.cart-total {
+  margin-top: 32px;
+}
+
+.link {
+  text-decoration: underline;
+}

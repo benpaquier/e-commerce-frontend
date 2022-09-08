@@ -1,13 +1,41 @@
-.product-card-img {
+.product-card {
+  position: relative;
+}
+
+.product-card-img-container {
+  position: relative;
   width: 290px;
   height: 350px;
+}
+
+.product-card-img-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-position: center;
   background-size: cover;
   transition: all 0.5s;
 }
 
-.active {
+.active .product-card-img-background {
   opacity: 0.75;
+}
+
+.product-card-button-container {
+  position: absolute;
+  top: 287px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.active .product-card-button-container {
+  opacity: 1;
 }
 
 .product-card-name {

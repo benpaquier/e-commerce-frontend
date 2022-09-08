@@ -3,6 +3,10 @@ header {
   border-bottom: 1px solid var(--lightgray);
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
 }
 
 nav {

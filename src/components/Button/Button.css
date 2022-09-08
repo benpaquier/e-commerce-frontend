@@ -1,0 +1,20 @@
+button {
+  background-color: black;
+  border: none;
+  max-width: 250px;
+  color: white;
+  font-weight: 700;
+  outline: none;
+  transition: all 0.5s;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.wide {
+  max-width: 100%;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--darkgrey);
+}

@@ -1,0 +1,14 @@
+.category-banner {
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.category-description {
+  margin: 32px 0px;
+}
+
+.category-products-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
